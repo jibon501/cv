@@ -1,0 +1,58 @@
+body{
+background: #0f1724;
+color: #e6eef6;
+font-family: Arial;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+margin:0;
+}
+.card{
+background:#111a30;
+padding:25px;
+border-radius:12px;
+text-align:center;
+max-width:400px;
+width:100%;
+box-shadow:0 0 15px rgba(0,0,0,0.4);
+}
+.avatar{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:10px;
+}
+.role{
+color:#9aa4b2;
+font-size:14px;
+margin:5px 0 15px;
+}
+.contact a, .social a{
+display:block;
+margin:5px 0;
+color:#4fd1c5;
+font-weight:bold;
+text-decoration:none;
+}
+.btn{
+background:#4fd1c5;
+padding:10px 15px;
+border-radius:8px;
+text-decoration:none;
+color:black;
+display:inline-block;
+margin:5px;
+font-weight:bold;
+}
+.btn.ghost{
+background:transparent;
+border:1px solid #4fd1c5;
+color:#4fd1c5;
+}
+.foot{
+margin-top:15px;
+color:#9aa4b2;
+font-size:0.8rem;
+}
