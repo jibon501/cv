@@ -1,38 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Md. Zahangir Alam - Jacquard Programmer</title>
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Md. Zahangir Alam - Jacquard Programmer</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Print CSS -->
+  <style type="text/css" media="print">
+    .no-print { display: none !important; }
+    body { background: white !important; color: black !important; }
+    .container { box-shadow: none !important; }
+    a { color: #000 !important; text-decoration: underline; }
+  </style>
 </head>
 <body>
-<main class="card">
-<img class="avatar" src="images/avatar.png" alt="Md. Zahangir Alam">
+  <!-- Language & Theme Toggle (Top Right) -->
+  <div class="no-print controls">
+    <button id="lang-toggle" title="Toggle Language">EN</button>
+    <button id="theme-toggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+    <button id="print-btn" title="Print CV"><i class="fas fa-print"></i></button>
+    <button id="pdf-btn" title="Download PDF"><i class="fas fa-file-pdf"></i></button>
+  </div>
 
-<h1>Md. Zahangir Alam</h1>
-<p class="role">Jacquard Programmer • Uttara Sweater Manufacturing Co. LTD., Nilphamari</p>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="profile-img">
+        <img src="assets/profile.jpg" alt="Md. Zahangir Alam" />
+      </div>
+      <h1>Md. Zahangir Alam</h1>
+      <p class="title">Jacquard Programmer</p>
+      <p class="company">Uttara Sweater Manufacturing Co. LTD., Nilphamari</p>
+    </header>
 
-<div class="contact">
-<a href="tel:+8801767080666">📞 01767080666</a>
-<a href="mailto:jibonr8@gmail.com">📧 jibonr8@gmail.com</a>
-</div>
+    <!-- Contact Info -->
+    <section class="contact-info">
+      <ul>
+        <li><i class="fas fa-envelope"></i> <span data-en="zahangir@example.com" data-bn="zahangir@example.com">zahangir@example.com</span></li>
+        <li><i class="fas fa-phone"></i> <span data-en="+880 17XX-XXXXXX" data-bn="+৮৮০ ১৭XX-XXXXXX">+880 17XX-XXXXXX</span></li>
+        <li><i class="fas fa-map-marker-alt"></i> <span data-en="Nilphamari, Bangladesh" data-bn="নীলফামারী, বাংলাদেশ">Nilphamari, Bangladesh</span></li>
+        <li><i class="fab fa-github"></i> <a href="https://github.com/jibon501" target="_blank">github.com/jibon501</a></li>
+        <li><i class="fab fa-linkedin"></i> <a href="#" target="_blank">linkedin.com/in/zahangir</a></li>
+      </ul>
+    </section>
 
-<div class="social">
-<a href="https://wa.me/8801767080666" target="_blank">💬 WhatsApp</a>
-<a href="https://www.facebook.com/JIBON981" target="_blank">📘 Facebook</a>
-</div>
+    <!-- Professional Summary -->
+    <section class="section">
+      <h2><i class="fas fa-user"></i> <span data-en="Professional Summary" data-bn="প্রোফাইল সারাংশ">Professional Summary</span></h2>
+      <p data-en="Experienced Jacquard Programmer with over <strong>15 years</strong> in sweater manufacturing, machine programming, sample development, and production optimization. Skilled in enhancing design accuracy, reducing downtime, and leading technical teams to meet high-quality production targets."
+         data-bn="১৫+ বছরের অভিজ্ঞতাসম্পন্ন জ্যাকার্ড প্রোগ্রামার। সোয়েটার উৎপাদন, মেশিন প্রোগ্রামিং, নমুনা তৈরি ও উৎপাদন দক্ষতা বৃদ্ধিতে দক্ষ। ডিজাইন নির্ভুলতা, ডাউনটাইম হ্রাস ও টিম নেতৃত্বে পারদর্শী।">
+        Experienced Jacquard Programmer with over <strong>15 years</strong>...
+      </p>
+    </section>
 
-<p class="summary">
-Skilled Jacquard Programmer with over 15 years of experience in sweater manufacturing, machine operation, sample development, and troubleshooting.
-</p>
+    <!-- Work Experience -->
+    <section class="section">
+      <h2><i class="fas fa-briefcase"></i> <span data-en="Work Experience" data-bn="অভিজ্ঞতা">Work Experience</span></h2>
+      <div class="job">
+        <h3>Jacquard Programmer</h3>
+        <p class="company">Uttara Sweater Manufacturing Co. LTD.</p>
+        <p class="duration" data-en="2008 – Present | Nilphamari, Bangladesh" data-bn="২০০৮ – বর্তমান | নীলফামারী">2008 – Present | Nilphamari, Bangladesh</p>
+        <ul>
+          <li data-en="Programmed complex jacquard designs using Shima Seiki and Stoll systems"
+              data-bn="শিমা সেকি ও স্টল সিস্টেমে জটিল জ্যাকার্ড ডিজাইন প্রোগ্রামিং">Programmed complex jacquard designs...</li>
+          <li data-en="Developed production samples and secured client approvals on first submission"
+              data-bn="প্রোডাকশন স্যাম্পল তৈরি ও প্রথমবারেই ক্লায়েন্ট অনুমোদন">Developed production samples...</li>
+          <li data-en="Reduced machine downtime by 30% through proactive troubleshooting"
+              data-bn="মেশিন ডাউনটাইম ৩০% কমানো">Reduced machine downtime by 30%...</li>
+          <li data-en="Increased production efficiency by 25% via process optimization"
+              data-bn="প্রক্রিয়া উন্নয়নে উৎপাদন ২৫% বৃদ্ধি">Increased production efficiency by 25%...</li>
+          <li data-en="Led and trained a team of 10 technicians"
+              data-bn="১০ জনের টিম নেতৃত্ব ও প্রশিক্ষণ">Led and trained a team of 10 technicians</li>
+        </ul>
+      </div>
+    </section>
 
-<div class="actions">
-<a class="btn" href="mailto:jibonr8@gmail.com">Email Me</a>
-<a class="btn ghost" href="https://wa.me/8801767080666" target="_blank">Chat on WhatsApp</a>
-</div>
-</main>
+    <!-- Skills with Progress Bars -->
+    <section class="section">
+      <h2><i class="fas fa-tools"></i> <span data-en="Skills" data-bn="দক্ষতা">Skills</span></h2>
+      <div class="skill-bar">
+        <div class="skill-name" data-en="Jacquard Programming" data-bn="জ্যাকার্ড প্রোগ্রামিং">Jacquard Programming</div>
+        <div class="skill-progress"><div class="fill" style="width: 95%"></div></div>
+        <span class="percent">95%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name" data-en="Shima Seiki SDS-ONE" data-bn="শিমা সেকি SDS-ONE">Shima Seiki SDS-ONE</div>
+        <div class="skill-progress"><div class="fill" style="width: 90%"></div></div>
+        <span class="percent">90%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name" data-en="Stoll M1 Plus" data-bn="স্টল M1 Plus">Stoll M1 Plus</div>
+        <div class="skill-progress"><div class="fill" style="width: 85%"></div></div>
+        <span class="percent">85%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name" data-en="Pattern Design" data-bn="প্যাটার্ন ডিজাইন">Pattern Design</div>
+        <div class="skill-progress"><div class="fill" style="width: 88%"></div></div>
+        <span class="percent">88%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name" data-en="Troubleshooting" data-bn="সমস্যা সমাধান">Troubleshooting</div>
+        <div class="skill-progress"><div class="fill" style="width: 92%"></div></div>
+        <span class="percent">92%</span>
+      </div>
+    </section>
 
-<footer class="foot">© 2025 Md. Zahangir Alam</footer>
+    <!-- Education -->
+    <section class="section">
+      <h2><i class="fas fa-graduation-cap"></i> <span data-en="Education" data-bn="শিক্ষা">Education</span></h2>
+      <p><strong data-en="Diploma in Textile Engineering" data-bn="ডিপ্লোমা ইন টেক্সটাইল ইঞ্জিনিয়ারিং">Diploma in Textile Engineering</strong><br>
+      <span data-en="Bangladesh Textile Institute, 2007" data-bn="বাংলাদেশ টেক্সটাইল ইন্সটিটিউট, ২০০৭">Bangladesh Textile Institute, 2007</span></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Md. Zahangir Alam. <span data-en="All rights reserved." data-bn="সর্বস্বত্ব সংরক্ষিত।">All rights reserved.</span></p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 </html>
